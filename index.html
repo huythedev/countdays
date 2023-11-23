@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đếm ngược ngày đến Tết</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+    <link rel="manifest" href="/icon/site.webmanifest" />
+    <!-- Add the following line for the favicon -->
+    <link rel="icon" href="/favicon.ico" />
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đếm ngược ngày đến Tết</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="overlay"></div>
 
-  <div id="overlay"></div>
-  
-  <div id="clock-container">
-    <p id="countdown-heading">Thời gian đến Tết còn</p>
-    <div id="clock">
-      <div id="days">0 ngày</div>
-      <div id="hours">0 giờ</div> 
-      <div id="minutes">0 phút</div>
-      <div id="seconds">0 giây</div>
+    <div id="clock-container">
+      <p id="countdown-heading">Thời gian đến Tết còn</p>
+      <div id="clock">
+        <div id="days">0 ngày</div>
+        <div id="hours">0 giờ</div>
+        <div id="minutes">0 phút</div>
+        <div id="seconds">0 giây</div>
+      </div>
     </div>
-  </div>
 
-  <div id="currenttime-container">
-    <p id="currenttime-heading">Giờ hiện tại</p>
-    <div id="currenttime">
-      <div id="current-hours">0 giờ</div> 
-      <div id="current-minutes">0 phút</div>
-      <div id="current-seconds">0 giây</div>
+    <div id="currenttime-container">
+      <p id="currenttime-heading">Giờ hiện tại</p>
+      <div id="currenttime">
+        <div id="current-hours">0 giờ</div>
+        <div id="current-minutes">0 phút</div>
+        <div id="current-seconds">0 giây</div>
+      </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
