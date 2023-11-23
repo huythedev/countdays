@@ -6,19 +6,26 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url("rick-roll.gif") center/cover fixed no-repeat; 
+    background: url("rick-roll.gif")
+      center/cover fixed no-repeat;
     position: relative;
   }
-  
+
   #overlay {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.1
+    );
     pointer-events: none; 
   }
-  
+
   #clock {
     display: flex;
     flex-direction: row;
@@ -29,13 +36,13 @@ body {
     padding: 20px;
     border: 2px solid #333;
     border-radius: 10px;
-    background-color: #fff;  
+    background-color: #fff;
     width: 600px;
   }
-  
+
   #clock div {
     margin: 10px;
     padding: 10px;
     border: 2px solid #333;
-    border-radius: 10px;  
+    border-radius: 10px;
   }
