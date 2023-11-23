@@ -6,43 +6,74 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url("rick-roll.gif")
-      center/cover fixed no-repeat;
+    background: url("rick-roll.gif") center/cover fixed no-repeat;
     position: relative;
-  }
+}
 
-  #overlay {
+#overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(
-      255,
-      255,
-      255,
-      0.1
-    );
-    pointer-events: none; 
-  }
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
 
-  #clock {
-    display: flex;
+#clock-container,
+#currenttime-container {
+    margin-top: 20px;
+}
+
+#countdown-heading,
+#currenttime-heading {
+    display: block;
     flex-direction: row;
     align-items: center;
-    font-size: 48px;
+    font-size: 30px;
     font-weight: bold;
     margin: 20px;
     padding: 20px;
     border: 2px solid #333;
     border-radius: 10px;
     background-color: #fff;
-    width: 600px;
-  }
+    width: 400px;
+}
 
-  #clock div {
+#currenttime {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px auto; 
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 400px;
+    text-align: center;
+  }
+  
+#clock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 400px;
+}
+
+#clock div,
+#currenttime div {
     margin: 10px;
     padding: 10px;
     border: 2px solid #333;
     border-radius: 10px;
-  }
+}
