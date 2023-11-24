@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đếm ngược ngày đến Tết</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="overlay"></div>
 
-    <div id="clock-container">
-      <p id="countdown-heading">Thời gian đến Tết còn</p>
-      <div id="clock">
-        <div id="days">0 ngày</div>
-        <div id="hours">0 giờ</div>
-        <div id="minutes">0 phút</div>
-        <div id="seconds">0 giây</div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .button-mobile {
+            border: 2px solid #333;
+            border-radius: 12px;
+            background-color: #fff;
+            text-align: center;
+            width: 100px;
+        }
+
+        .button-desktop {
+            border: 2px solid #333;
+            border-radius: 12px;
+            background-color: #fff;
+            text-align: center;
+            width: 100px;
+        }
+
+        .button:hover {
+            transform: scale(1.2);
+        }
+    </style>
+    <title>Redirect Buttons</title>
+</head>
+
+<body>
+
+    <div class="button-container">
+        <a href="/countdays/mobile/index.html" class="button button-mobile" id="mobileButton">Mobile</a>
+        <a href="/countdays/desktop/index.html" class="button button-desktop" id="desktopButton">Desktop</a>
     </div>
 
-    <div id="currenttime-container">
-      <p id="currenttime-heading">Giờ hiện tại</p>
-      <div id="currenttime">
-        <div id="current-hours">0 giờ</div>
-        <div id="current-minutes">0 phút</div>
-        <div id="current-seconds">0 giây</div>
-      </div>
-    </div>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
