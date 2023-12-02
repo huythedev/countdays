@@ -1,2 +1,2 @@
 # Đếm ngược ngày đến Tết
-[Click here](https://huythedev.github.io/countdays/)
+[Click here](https://huythedev.me/countdays/)
