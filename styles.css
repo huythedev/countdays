@@ -14,29 +14,22 @@ body {
     width: 400px;
 }
 
-.button {
-    padding: 15px 30px;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.button-mobile {
-    border: 2px solid #333;
-    border-radius: 12px;
-    background-color: #fff;
-    text-align: center;
-    width: 100px;
-}
-
+.button-mobile,
 .button-desktop {
     border: 2px solid #333;
     border-radius: 12px;
     background-color: #fff;
     text-align: center;
     width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .button:hover {
