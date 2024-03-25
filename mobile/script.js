@@ -31,7 +31,7 @@ function displayCurrentTime() {
 }  
 
 function calculateTimeRemaining() {
-  const tetDate = new Date("2024-02-10T00:00:00+07:00");
+  const tetDate = new Date("2025-01-29T00:00:00+07:00");
   const timeRemaining = tetDate - currentTime;
   const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
   const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
